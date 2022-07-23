@@ -1,47 +1,189 @@
-<!DOCTYPE html>
-<html>
+<html lang="it">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,200&display=swap">
-    <title>Benvenuto, sono Carmine</title>
-
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <script src="script.js" defer></script>
+    <title>Portfolio 2.0</title>
 </head>
 
 <body>
-    <main id="index-page">
-        <section id="first-section" class="shadow">
-            <h1>Benvenuto, sono Carmine Plaitano</h1>
-            <h3>"Un aspirante Front-end Web Developer,<br> con entusiasmo per quello che fa..<br> ci metto tutto me stesso per arrivare all'obiettivo"</h3>
+    <!-- hero -->
+    <div class="hero-image">
+        <div class="hero-image__filter"></div>
+        <!-- finestra link -->
+        <div class="link-button">
+            <section class="link-button_menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </section>
+            <section class="link-button_home"><span><b>H</b></span></section>
+            <section class="link-button_skills"><span><b>S</b></span></section>
+            <section class="link-button_progetti"><span><b>P</b></span></section>
+        </div>
+        <section id="link-container">
+            <a class="link link-home"><span>H</span>ome</a>
+            <a class="link link-skills"><span>S</span>kills</a>
+            <a class="link link-progetti"><span>P</span>rogetti</a>
         </section>
-        <section id="second-section" class="shadow">
-            <p><b>"Una pagina dedicata alle mie skills e i miei progetti,<br>
-                    imparate da autodidatta"</b></p>
-            <a href="homepage.html" id="entra-button">Entra</a>
+        <!-- finestra dati anagrafici -->
+        <section id="bio-container">
+            <img src="materiale/foto_profilo.jpg" alt="foto-profilo">
+            <list class="bio-container__list">
+                <b>
+                    <li><span>C</span>armine</li>
+                    <li><span>P</span>laitano</li><br>
+                    <li><span>25</span> anni</li><br>
+                    <li><span>J</span>unior <span>W</span>eb <span>D</span>eveloper</li>
+                </b>
+            </list>
         </section>
-        <section id="social-section">
+        <!-- finestra biografia -->
+        <section id="mainbio-container">
+            <h1 class="title"><span>W</span>eb <span>D</span>eveloper <span>J</span>unior</h1>
+            <p class="text"><span>H</span>o quasi sempre lavorato in cucina, come cuoco unico o in una brigata, ma
+                avvolte per
+                esigenza mi sono ritrovato a fare anche altri lavori.<br>
+                <span>D</span>opo il primo lock-down, con i ristoranti chiusi, ho trovato lavoro in un'azienda agricola
+                dove
+                tutt'oggi lavoro.<br>
+                <span>L</span>a cucina non mi manca, apprezzo molto il fatto di non essere più costretto a lavorare fino
+                a notte
+                tardi ed altre pecche del mestiere; piuttosto ho scoperto per puro caso una, per me nuova, figura del
+                mondo del lavoro: lo sviluppatore web.<br>
+                <span>S</span>ono mesi che studio programmazione web e penso sia molto interessante, soprattutto perchè
+                l'intero
+                settore è proiettato verso il futuro e l'innovazione, oltre ad essere in forte crescita.
+            </p>
+        </section>
+        <!-- finestra skills -->
+        <section id="skills-container">
+            <h1 class="title"><span>S</span>kills:</h1>
+            <section class="skills-container_html">
+                <img class="skills-container_icon"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />
+                <ul class="skills-container_list">
+                    <li>-<span>S</span>truttura di una pagina Web</li>
+                    <li>-<span>F</span>ormattare il testo</li>
+                    <li>-<span>F</span>orms, tabelle, link, iframes</li>
+                    <br>
+                    <li>
+                        <ul class="skills-container_list_fonti">
+                            <li><span>F</span>onti:</li>
+                            <li>-<span>Y</span>outube (fcamuso)</li>
+                            <li>-<span>U</span>demy (Corso completo per Sviluppatori Web 2.0)</li>
+                            <li>-<span>w</span>3schools.com</li>
+                            <li>-<span>s</span>tackoverflow.com</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="skills-container_css">
+                <img class="skills-container_icon"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />
+                    <ul class="skills-container_list">
+                        <li>-<span>L</span>ayout fondamentali</li>
+                        <li>-<span>A</span>nimazioni</li>
+                        <li>-<span>D</span>isplay: Flexbox e Grid</li>
+                        <li>-<span>R</span>esponsive web design</li>
+                        <br>
+                        <li>
+                            <ul class="skills-container_list_fonti">
+                                <li><span>F</span>onti:</li>
+                                <li>-<span>Y</span>outube (Marchetti Design)</li>
+                                <li>-<span>U</span>demy (Corso completo per Sviluppatori Web 2.0)</li>
+                                <li>-<span>c</span>ss-tricks.com</li>
+                                <li>-<span>w</span>3schools.com</li>
+                                <li>-<span>s</span>tackoverflow.com</li>
+                            </ul>
+                        </li>
+                    </ul>
+            </section>
+            <section class="skills-container_js">
+                <img class="skills-container_icon"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                    <ul class="skills-container_list">
+                        <li>-<span>V</span>alori, tipi, operatori</li>
+                        <li>-<span>F</span>unzioni</li>
+                        <li>-<span>S</span>trutture dati: oggetti e array</li>
+                        <li>-<span>G</span>estione degli eventi</li>
+                        <br>
+                        <li>
+                            <ul class="skills-container_list_fonti">
+                                <li><span>F</span>onti:</li>
+                                <li>-<span>J</span>avascript. Guida completa per lo sviluppatore Di Marijn Haverbeke · 2019</li>
+                                <li>-<span>Y</span>outube (Edoardo Midali, freeCodeCamp.org)</li>
+                                <li>-<span>U</span>demy (Corso completo per Sviluppatori Web 2.0)</li>
+                                <li>-<span>w</span>3schools.com</li>
+                                <li>-<span>s</span>tackoverflow.com</li>
+                                <li>-<span>s</span>tackoverflow.com</li>
+                            </ul>
+                        </li>
+                    </ul>
+            </section>
+        </section>
+        <!-- finestra progetti -->
+        <section id="progetti-container">
+            <h1 class="title"><span>P</span>rogetti:</h1>
+            <div class="progetti-container_main">
+                <section class="progetto primo-progetto">
+                    <img id="progetto-img1" src="materiale/Immagine.png" />
+                    <h4 id="progetto-title1">Progetto 1</h4>
+                    <p id="progetto-text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusamus
+                        adipisci, nemo culpa repellendus autem. Est impedit officiis quam voluptates nisi ipsum
+                        assumenda praesentium, porro quasi aperiam facilis doloremque ratione!</p>
+                </section>
+                <section class="progetto secondo-progetto">
+                    <img id="progetto-img2" src="materiale/Immagine2.png" />
+                    <h4 id="progetto-title2">Progetto 2</h4>
+                    <p id="progetto-text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusamus
+                        adipisci, nemo culpa repellendus autem. Est impedit officiis quam voluptates nisi ipsum
+                        assumenda praesentium, porro quasi aperiam facilis doloremque ratione!</p>
+                </section>
+                <section class="progetto terzo-progetto">
+                    <img id="progetto-img3" src="materiale/Immagine3.png" />
+                    <h4 id="progetto-title3">Progetto 3</h4>
+                    <p id="progetto-text3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusamus
+                        adipisci, nemo culpa repellendus autem. Est impedit officiis quam voluptates nisi ipsum
+                        assumenda praesentium, porro quasi aperiam facilis doloremque ratione!</p>
+                </section>
+            </div>
+            <div class="progetti-container_buttons">
+                <button class="button left-button"><b><</b></button>
+                <button class="button right-button"><b>></b></button>
+            </div>
+        </section>
 
-            <img src="../Images/Instagram Icon.png" usemap="#insta"><br>
-            <img src="../Images/Facebook Icon.png" usemap="#fb"><br>
-            <img src="../Images/Linkedin Icon.png" usemap="#linkedin">
+
+
+        <!-- finestra link social -->
+        <section id="social-container">
+            <div><img class="social-logo" src="materiale/Instagram Icon.png" usemap="#insta"><br></div>
+            <div><img class="social-logo" src="materiale/Facebook Icon.png" usemap="#fb"><br></div>
+            <div><img class="social-logo" src="materiale/Linkedin Icon.png" usemap="#linkedin"></div>
 
             <map name="insta"><area shape="default" href="https://www.instagram.com/stocarmine/" target="_blank"></map>
             <map name="fb"><area shape="default" href="https://www.facebook.com/carmine.plaitano.3/"
                     target="_blank"></map>
-            <map name="linkedin"><area shape="default" href="https://www.linkedin.com/uas/login-submit"
+            <map name="linkedin"><area shape="default" href="https://www.linkedin.com/in/carmine-plaitano-45b286218/"
                     target="_blank"></map>
         </section>
-        <section id="languages-section">
+    </div>
 
-            <img src="../Images/Html5 Icon.png">
-            <img src="../Images/Css Icon.png">
+    <!-- finestra footer -->
 
-        </section>
-    </main>
+    <footer>
+        <small>
+            Copyright &copy; <span id="current-year"></span>, Carmine Plaitano. All Rights Reserved
+        </small>
+    </footer>
 </body>
 
 </html>
